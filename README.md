@@ -43,7 +43,7 @@ Now that you have the template project installed, you are ready to browse on it,
 
 ### Creating a custom directive template
 
-On the folder where the directive template will be installed and execute the following line :
+On the folder where the directive template will be installed execute the following line :
 
 > `\projectFolder\WebContent\app> yo bz-angular-webpack:directive`
 
