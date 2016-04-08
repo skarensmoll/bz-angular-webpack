@@ -1,8 +1,5 @@
 # generator-bz-angular-webpack [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Template to generate a basic project with the necessary structure of folders and code with angular and webpack
-
-
-Based on Component-Based AngularJs Directives Architecture  there were developed some common templates which can be used not only at the beginning of a project as a basic guide of this architecture, but also during the development of a web application making use of a directive templates.
+Template to generate a basic project with the necessary structure of folders and code with angular and webpack.Based on Component-Based AngularJs Directives Architecture  there were developed some common templates which can be used not only at the beginning of a project as a basic guide of this architecture, but also during the development of a web application making use of a directive templates.
 
 ## Available templates:
 1. Project template
@@ -54,9 +51,9 @@ Once executed the above command there will be a question asking for the name of 
 
 ```bash
 /* Include this part into your dependencies file
-require('../app/<%= name %>/<%= name %>Module.js');
-require('../app/<%= name %>/<%= name %>Directive.js');
-require('../app/<%= name %>/<%= name %>.less');
+require('../app/directiveName/directiveNameModule.js');
+require('../app/directiveName/directiveNameDirective.js');
+require('../app/directiveName/directiveName.less');
 */
 ```
 
