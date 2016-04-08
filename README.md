@@ -17,7 +17,7 @@ You must have node.js and its package manager (npm) installed in your project (Y
 
 ### Instalation:
 
-Using a terminal, you must place yourself on the folder where the project will be hosted and then execute the following commands.
+Using a terminal,place yourself on the folder where the project will be hosted and then execute the following commands.
 
 ```bash
 \projectFolder> npm install -g yo
