@@ -45,8 +45,9 @@ Now that you have the template project installed, you are ready to browse on it,
 
 On the folder where the directive template will be installed execute the following line :
 
-> `\projectFolder\WebContent\app> yo bz-angular-webpack:directive`
-
+```bash
+\projectFolder\WebContent\app> yo bz-angular-webpack:directive
+```
 Once executed the above command there will be a question asking for the name of your directive. Additionally, inside of one of the files installed with the directive , you will find a file with the following name <nameDirectiveModule.js> , copy the lines contained in it and paste them into your dependencies file.
 
 ```bash
