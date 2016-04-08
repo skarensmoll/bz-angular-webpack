@@ -25,7 +25,7 @@ yo bz-angular-webpack
 
 ## License
 
-Apache-2.0 © [Ivan Taimal -Karen Pedraza](ska)
+Apache-2.0 © [Karen Pedraza, Ivan Taimal](ska)
 
 
 [npm-image]: https://badge.fury.io/js/generator-bz-angular-webpack.svg
