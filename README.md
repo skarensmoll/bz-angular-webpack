@@ -1,20 +1,71 @@
 # generator-bz-angular-webpack [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Template to generate a basic project with the necessary structure of folders and code
+> Template to generate a basic project with the necessary structure of folders and code with angular and webpack
 
-## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-bz-angular-webpack using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+Based on Component-Based AngularJs Directives Architecture  there were developed some common templates which can be used not only at the beginning of a project as a basic guide of this architecture, but also during the development of a web application making use of a directive templates.
+
+## Available templates:
+1. Project template
+2. Directive template
+
+## Designed for:
+Angular 1.4.7
+
+## Installing templates generator
+
+### Prerequisites:
+
+You need node.js tools to initialize tests and webpack compilation.
+You must have node.js and its package manager (npm) installed in your project (You can obtain it from node).
+
+### Instalation:
+
+Using a terminal, you must place yourself on the folder where the project will be hosted and then execute the following commands.
 
 ```bash
-npm install -g yo
-npm install -g generator-bz-angular-webpack
+\projectFolder> npm install -g yo
+\projectFolder> npm install -g generator-bz-angular-webpack
 ```
 
-Then generate your new project:
+### Installing the template project 
+
+Making use of a terminal, go to the folder where the template project will be hosted and then execute the following commands.
 
 ```bash
-yo bz-angular-webpack
+\projectFolder> yo bz-angular-webpack
+\projectFolder> cd WebContent
 ```
+
+```bash
+\projectFolder\WebContent> npm install
+\projectFolder\WebContent> webpack
+```
+
+Now that you have the template project installed, you are ready to browse on it, opening the auto-generated file called  Index.html.
+
+
+### Creating a custom directive template
+
+On the folder where the directive template will be installed and execute the following line :
+
+> `\projectFolder\WebContent\app> yo bz-angular-webpack:directive`
+
+Once executed the above command there will be a question asking for the name of your directive. Additionally, inside of one of the files installed with the directive , you will find a file with the following name <nameDirectiveModule.js> , copy the lines contained in it and paste them into your dependencies file.
+
+```bash
+/* Include this part into your dependencies file
+require('../app/<%= name %>/<%= name %>Module.js');
+require('../app/<%= name %>/<%= name %>Directive.js');
+require('../app/<%= name %>/<%= name %>.less');
+*/
+```
+
+Finally  , you only need to run webpack again and take advantage of this new directive template!.
+
+```bash
+\projectFolder\WebContent> webpack
+```
+
 
 ## Getting To Know Yeoman
 
@@ -25,7 +76,7 @@ yo bz-angular-webpack
 
 ## License
 
-Apache-2.0 © [Karen Pedraza, Ivan Taimal](ska)
+Apache-2.0 © [Karen Niño, Ivan Taimal](ska)
 
 
 [npm-image]: https://badge.fury.io/js/generator-bz-angular-webpack.svg
