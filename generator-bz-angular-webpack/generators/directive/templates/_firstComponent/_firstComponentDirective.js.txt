@@ -1,0 +1,20 @@
+var <%= name %>Module = angular.module('<%= name %>Module');
+<%= name %>Module.controller('<%= upperName %>Controller', ['$i18n', function ($i18n) {
+    /**
+     * Tip: add here only visual logic
+     */
+    var vm = this;
+    vm.showAlert = function () {
+        alert($i18n.translate.general_alert);
+    };
+}]);
+
+<%= name %>Module.directive('<%= name %>', [function () {
+    return {
+        restrict: 'E',
+        scope: {},
+        controller: '<%= upperName %>Controller',
+        controllerAs: 'ctrl',
+        template: require('./<%= name %>.html')
+    };
+}]);

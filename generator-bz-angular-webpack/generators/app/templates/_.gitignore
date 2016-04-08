@@ -1,0 +1,6 @@
+**/WebContent/node_modules/*
+**/WebContent/app/dist/*
+**/.idea/*
+**/test/unit/reports/*
+**/test/PhantomJS*
+**/index.html
