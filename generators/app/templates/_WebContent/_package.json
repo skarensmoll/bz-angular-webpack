@@ -59,7 +59,7 @@
     "webpack-path-rewriter": "^1.1.2"
   },
   "dependencies": {
-    "angular": "^1.4.7",
+    "angular": "^1.5.3",
     "angular-local-storage": "^0.2.2",
     "loader-utils": "^0.2.11",
     "strip-json-comments": "^2.0.1"

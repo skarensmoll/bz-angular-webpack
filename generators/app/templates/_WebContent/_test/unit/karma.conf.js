@@ -10,7 +10,8 @@ module.exports = function (config) {
             '../app/**/*Service.js',
             '../app/**/*Controller.js',
             '../app/**/*Spec.js',
-            '../app/**/*Directive.js'
+            '../app/**/*Directive.js',
+            '../app/**/*Component.js'
         ],
         urlRoot: '/',
         autoWatch: true,
@@ -34,7 +35,8 @@ module.exports = function (config) {
             '../app/**/*Module.js': ['webpack', 'sourcemap', 'coverage'],
             '../app/**/*Service.js': ['webpack', 'sourcemap', 'coverage'],
             '../app/**/*Controller.js': ['webpack', 'sourcemap', 'coverage'],
-            '../app/**/*Directive.js': ['webpack', 'sourcemap', 'coverage']
+            '../app/**/*Directive.js': ['webpack', 'sourcemap', 'coverage'],
+            '../app/**/*Component.js': ['webpack', 'sourcemap', 'coverage']
 
         },
         webpack: {

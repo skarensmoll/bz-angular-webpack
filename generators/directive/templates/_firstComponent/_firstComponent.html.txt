@@ -1,4 +1,3 @@
-<h>this is my <%= name %></h>
+<h><%= name %></h>
 <br/>
-<span>{{'general_copyright' | translate}},</span>
 <a ng-click="ctrl.showAlert()">Click here</a>

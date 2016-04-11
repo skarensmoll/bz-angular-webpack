@@ -65,6 +65,26 @@ Finally  , you only need to run webpack again and take advantage of this new dir
 ```
 
 
+
+### Creating a component template -  Angular 1.5.3
+
+On the folder where the component template will be installed execute the following line :
+
+```bash
+\projectFolder\WebContent\app> yo bz-angular-webpack:component
+```
+Once executed the above command there will be a question asking for the name of your component. Additionally, inside of one of the files installed with the directive , you will find a file with the following name <nameDirectiveModule.js> , copy the lines contained in it and paste them into your dependencies file.
+
+```bash
+/* Include this part into your dependencies file
+require('../app/componentName/componentNameModule.js');
+require('../app/componentName/componentNameDirective.js');
+require('../app/componentName/componentName.less');
+*/
+```
+
+
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
