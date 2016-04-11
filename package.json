@@ -1,6 +1,6 @@
 {
   "name": "generator-bz-angular-webpack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Template to generate a basic project with the necessary structure of folders and code",
   "homepage": "",
   "author": {
