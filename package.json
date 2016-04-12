@@ -41,7 +41,7 @@
       "mocha": true
     }
   },
-  "repository": "skarensmoll/generator-bz-angular-webpack",
+  "repository": "skarensmoll/bz-angular-webpack",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
