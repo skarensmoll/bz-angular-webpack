@@ -6,6 +6,7 @@ var appModules = [
   'pascalprecht.translate',
   'ngRoute',
   'i18nModule',
+  'commonDirectivesModule',
   'mainModule',
   'firstComponentModule'
 ];

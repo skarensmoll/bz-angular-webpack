@@ -19,6 +19,13 @@ require('../app/i18n/i18nDirective.js');
 require('../app/i18n/i18nService.js');
 
 /**
+ * common Directives
+ **/
+require('../app/commons/directives/commonDirectivesModule.js');
+require('../app/commons/directives/ripple/rippleDirective.js');
+require('../app/commons/directives/ripple/ripple.less');
+
+/**
  * mainComponent Module
  **/
 require('../app/main/mainModule.js');

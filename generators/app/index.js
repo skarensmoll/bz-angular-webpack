@@ -123,6 +123,22 @@ module.exports = yeoman.generators.Base.extend({
     );
   },
 
+  //Copy commonsDirectives
+  commonsDirectives: function () {
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_commons/_directives/_commonDirectivesModule.js'),
+      this.destinationPath('WebContent/app/commons/directives/commonDirectivesModule.js')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_commons/_directives/_ripple/_rippleDirective.js'),
+      this.destinationPath('WebContent/app/commons/directives/ripple/rippleDirective.js')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_commons/_directives/_ripple/_ripple.less'),
+      this.destinationPath('WebContent/app/commons/directives/ripple/ripple.less')
+    );
+  },
+
 
   //Styles
   appStyles: function(){
