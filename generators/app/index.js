@@ -1,5 +1,7 @@
 'use strict';
-//Require dependencies
+//npm adduser
+//npm publish ./
+// Require dependencies
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
