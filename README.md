@@ -6,7 +6,7 @@ Template to generate a basic project with the necessary structure of folders and
 2. Directive template
 
 ## Designed for:
-Angular 1.4.7
+Angular 1.4.7, 1.5.X
 
 ## Installing templates generator
 
@@ -36,9 +36,10 @@ Making use of a terminal, go to the folder where the template project will be ho
 ```bash
 \projectFolder\WebContent> npm install
 \projectFolder\WebContent> webpack
+\projectFolder\WebContent> npm start
 ```
 
-Now that you have the template project installed, you are ready to browse on it, opening the auto-generated file called  Index.html.
+Now that you have the template project installed, you are ready to browse on it, opening the auto-generated file called  Index.html. http://localhost:3000/index.html#/
 
 
 ### Creating a custom directive template
@@ -66,7 +67,7 @@ Finally  , you only need to run webpack again and take advantage of this new dir
 
 
 
-### Creating a component template -  Angular 1.5.3
+### Creating a component template -  Angular 1.5.X
 
 On the folder where the component template will be installed execute the following line :
 

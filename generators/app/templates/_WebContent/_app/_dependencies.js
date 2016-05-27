@@ -19,6 +19,14 @@ require('../app/i18n/i18nDirective.js');
 require('../app/i18n/i18nService.js');
 
 /**
+ * mainComponent Module
+ **/
+require('../app/main/mainModule.js');
+require('../app/main/mainComponent.js');
+require('../app/main/main.less');
+
+
+/**
  * firstComponent Module
  **/
 require('../app/firstComponent/firstComponentModule.js');

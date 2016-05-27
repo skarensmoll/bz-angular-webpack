@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "test": "karma start ./test/unit/karma.conf.js",
-    "webpack": "webpack --config webpack.config.js --colors --hide-modules --watch"
+    "webpack": "webpack --config webpack.config.js --colors --hide-modules --watch",
+    "server:dev": "webpack-dev-server --config webpack-base.config.js --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base ../",
+    "start": "npm run server:dev"
   },
   "devDependencies": {
     "angular-base64": "^2.0.5",
@@ -59,7 +61,7 @@
     "webpack-path-rewriter": "^1.1.2"
   },
   "dependencies": {
-    "angular": "^1.5.3",
+    "angular": "^1.5.5",
     "angular-local-storage": "^0.2.2",
     "loader-utils": "^0.2.11",
     "strip-json-comments": "^2.0.1"

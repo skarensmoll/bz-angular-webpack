@@ -42,13 +42,6 @@ module.exports = yeoman.generators.Base.extend({
   },
   //Copy application files
   app: function () {
-
-    // i18n Multilanguage
-    this.fs.copy(
-      this.templatePath('_WebContent/_app/_app.html'),
-      this.destinationPath('WebContent/app/app.html')
-    );
-
     this.fs.copy(
       this.templatePath('_WebContent/_app/_app.js'),
       this.destinationPath('WebContent/app/app.js')
@@ -102,6 +95,30 @@ module.exports = yeoman.generators.Base.extend({
       this.destinationPath('WebContent/app/i18n/resources/es-co.json')
     );
 
+  },
+
+  //Copy main component files
+  mainComponent: function () {
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_main/_main.html'),
+      this.destinationPath('WebContent/app/main/main.html')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_main/_main.less'),
+      this.destinationPath('WebContent/app/main/main.less')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_main/_mainComponent.js'),
+      this.destinationPath('WebContent/app/main/mainComponent.js')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_main/_mainModule.js'),
+      this.destinationPath('WebContent/app/main/mainModule.js')
+    );
+    this.fs.copy(
+      this.templatePath('_WebContent/_app/_main/_mainSpec.js'),
+      this.destinationPath('WebContent/app/main/mainSpec.js')
+    );
   },
 
 

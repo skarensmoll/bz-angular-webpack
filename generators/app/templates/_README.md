@@ -53,8 +53,9 @@ To generate the bundle and to start the application, you must run:
 
 ```
 helloworld-angular-webpack\WebContent>webpack
+helloworld-angular-webpack\WebContent>npm start
 ```
-Once generated the bundle, you can open  the project with webstorm and open the index.html in the root and see the application in a browser.
+Once generated the bundle, you can open  the project with webstorm and open the index.html in the root and see the application in a browser. http://localhost:3000/index.html#/
 
 
 
