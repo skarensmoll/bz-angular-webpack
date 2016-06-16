@@ -1,5 +1,5 @@
 describe('Module to test: <%= name %>', function () {
-
+   var element;
     beforeEach(module('<%= name %>Module'));
     beforeEach(module('pascalprecht.translate'));
     /***
@@ -15,7 +15,7 @@ describe('Module to test: <%= name %>', function () {
         }));
         it('Replaces the element with the appropriate content', function () {
             // Compile a piece of HTML containing the directive
-            var element = $compile('<<%= splitName %>></<%= splitName %>>')($rootScope);
+            element = $compile('<<%= splitName %>></<%= splitName %>>')($rootScope);
             $rootScope.$digest();
             // Check that the compiled element contains the templated content
         });
@@ -25,12 +25,10 @@ describe('Module to test: <%= name %>', function () {
      * */
     describe('<%= name %> Controller', function () {
         var _<%= name %>Controller;
-
-        var _scope;
-        it('should be Defined', inject(function ($controller, $rootScope) {
-            _scope = $rootScope.$new();
-            _<%= name %>Controller = $controller('<%= upperName %>Controller', {
-            });
+        beforeEach(function() {
+            _<%= name %>Controller = element.controller('<%= name %>');
+        });
+        it('should be Defined', inject(function () {
             expect(_<%= name %>Controller).toBeDefined();
         }));
     });

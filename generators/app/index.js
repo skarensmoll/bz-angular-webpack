@@ -207,4 +207,12 @@ module.exports = yeoman.generators.Base.extend({
     );
   },
 
+  //Copy unit test files
+  unitTest: function() {
+    this.fs.copy(
+      this.templatePath('_WebContent/_test/unit/karma.conf.js'),
+      this.destinationPath('WebContent/test/unit/karma.conf.js')
+    );
+  }
+
 });
