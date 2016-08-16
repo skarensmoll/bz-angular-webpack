@@ -93,9 +93,7 @@ require('../app/componentName/componentName.less');
  * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
-## License
-
-Apache-2.0 © [Karen Niño, Ivan Taimal](ska)
+[Karen Niño, Ivan Taimal](ska)
 
 
 [npm-image]: https://badge.fury.io/js/generator-bz-angular-webpack.svg
