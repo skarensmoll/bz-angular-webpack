@@ -1,4 +1,4 @@
-# generator-bz-angular-webpack [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-bz-angular-webpack 
 Template to generate a basic project with the necessary structure of folders and code with angular and webpack.Based on Component-Based AngularJs Directives Architecture  there were developed some common templates which can be used not only at the beginning of a project as a basic guide of this architecture, but also during the development of a web application making use of a directive templates.
 
 ## Available templates:
