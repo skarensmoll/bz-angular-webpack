@@ -5,7 +5,7 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
 
   multilanguage: function () {
 

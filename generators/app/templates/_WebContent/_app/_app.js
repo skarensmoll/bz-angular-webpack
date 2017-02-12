@@ -8,10 +8,16 @@ var appModules = [
   'i18nModule',
   'commonDirectivesModule',
   'mainModule',
-  'firstComponentModule'
+  'firstComponentModule',
+  'ngMaterial'
 ];
 
 appConfiguration = appConfigurations.productionConfiguration;
 
-angular.module('helloworldApp', appModules, appConfiguration);
+angular.module('helloworldApp', appModules, appConfiguration).config(['$mdThemingProvider', function ($mdThemingProvider) {
+  //https://material.angularjs.org/latest/Theming/01_introduction
+  $mdThemingProvider.theme('default')
+    .primaryPalette('light-blue')
+    .accentPalette('teal');
+}]);
 angular.bootstrap(document, ['helloworldApp']);

@@ -20,7 +20,7 @@ var Utilities = {
 }
 
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
 
     prompting: function () {
         var done = this.async();

@@ -6,7 +6,7 @@ Template to generate a basic project with the necessary structure of folders and
 2. Directive template
 
 ## Designed for:
-Angular 1.4.7, 1.5.X
+Angular 1.4.7 -- 1.5.9
 
 ## Installing templates generator
 
@@ -80,6 +80,7 @@ Once executed the above command there will be a question asking for the name of 
 /* Include this part into your dependencies file
 require('../app/componentName/componentNameModule.js');
 require('../app/componentName/componentNameComponent.js');
+require('../app/componentName/componentNameService.js');
 require('../app/componentName/componentName.less');
 */
 ```

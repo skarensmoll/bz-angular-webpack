@@ -1,4 +1,26 @@
-<h>{{'general_first_component' | translate}}</h>
-<br/>
-<span>{{'general_copyright' | translate}},</span>
-<button ripple="#ffffff" class="ripple" ng-click="ctrl.showAlert()">Click here</button>
+<div class="first-component">
+  <h1>{{'general_first_component' | translate}}</h1>
+  <br/>
+  <span>{{'component_ready_comment' | translate}},</span>
+  <md-input-container class="bz-input-container">
+    <label>{{'input_text' | translate}}</label>
+    <input type="text"
+           id="name"
+           ng-model="ctrl.textField"
+           md-maxlength="20"
+           maxlength="20"
+           ng-pattern="/^[a-zA-Z0-9- ]*$/">
+    <div ng-messages="ctrl.project.form.$error">
+      <div ng-message="md-maxlength"></div>
+    </div>
+  </md-input-container>
+
+  <md-button class="md-accent md-raised"
+             md-ink-ripple="E0F2F1"
+             ng-click="ctrl.showAlert()">
+    <span>Click here</span>
+  </md-button>
+  <br/>
+  <span md-colors="{color:'primary'}" class="md-display-1">{{ctrl.message}}</span>
+  <br/>
+</div>
