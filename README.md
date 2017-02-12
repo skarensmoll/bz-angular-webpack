@@ -103,3 +103,4 @@ require('../app/componentName/componentName.less');
 [travis-url]: https://travis-ci.org/skarensmoll/generator-bz-angular-webpack
 [daviddm-image]: https://david-dm.org/skarensmoll/generator-bz-angular-webpack.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/skarensmoll/generator-bz-angular-webpack
+
